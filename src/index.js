@@ -9,7 +9,8 @@ import { RouterProvider } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <h1>Hello</h1>
+  // RouterProvider renders routes from router in index.js
+  <RouterProvider router={router} />
 );
 
 // If you want to start measuring performance in your app, pass a function
