@@ -1,6 +1,18 @@
+import { useLoaderData } from 'react-router-dom'
+
 const Price = (props) => {
+    // get data fetched by loader
+        const stock = useLoaderData()
+
+        // console.log(stock)
+
     return (<>
-        <h1>This is the Price Page Component</h1>
+        <div className="stock">
+            <h1>
+                {stock.symbol}
+            </h1>
+            <h2>{stock.price}</h2>
+        </div>
     </>)
 }
 

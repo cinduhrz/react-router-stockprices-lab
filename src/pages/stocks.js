@@ -12,19 +12,19 @@ const Stocks = (props) => {
 
     return (<>
         <div className="stocks">
-            {stocks.map((stock) => {
-                const {name, symbol} = stock
+            <ul>
+                {stocks.map((stock) => {
+                    const {name, symbol} = stock
 
-                return (
-                    <ul>
-                        <li key={symbol}>
-                            <Link to={`/price/${symbol}`}>
-                                <h2>{name}</h2>
-                            </Link>
-                        </li>
-                    </ul>
-                )
-            })}
+                    return (
+                            <li key={symbol}>
+                                <Link to={`/price/${symbol}`}>
+                                    <h2>{name}</h2>
+                                </Link>
+                            </li>
+                    )
+                })}
+            </ul>
         </div>
     </>)
 }
