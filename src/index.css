@@ -41,3 +41,13 @@ body {
 .stocks {
   text-align: left;
 }
+
+.stocks a {
+  color: black;
+  text-decoration: none;
+}
+
+.stocks a:hover {
+  cursor: pointer;
+  color: rgb(100, 100, 100);
+}
