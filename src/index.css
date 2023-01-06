@@ -37,3 +37,7 @@ body {
   cursor: pointer;
   color: rgb(200, 200, 200);
 }
+
+.stocks {
+  text-align: left;
+}

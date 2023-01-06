@@ -18,7 +18,7 @@ const router = createBrowserRouter(
         <Route path="/" element={<App/>}>
             <Route path="" element={<Main/>}/>
             <Route path="stocks" element={<Stocks/>}/>
-            <Route path="price" element={<Price/>}/>
+            <Route path="price/:symbol" element={<Price/>}/>
             <Route path="about" element={<About/>}/>
         </Route>
     )
