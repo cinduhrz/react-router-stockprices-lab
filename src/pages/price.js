@@ -5,6 +5,7 @@ const Price = (props) => {
         const stock = useLoaderData()
 
         // console.log(stock)
+        // returns undefined
 
     return (<>
         <div className="stock">
