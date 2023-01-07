@@ -2,10 +2,10 @@ import { useLoaderData } from 'react-router-dom'
 
 const Price = (props) => {
     // get data fetched by loader
-        const stock = useLoaderData()
+        const stocksList = useLoaderData()
+        const stock = stocksList[0]
 
-        // console.log(stock)
-        // returns undefined
+        console.log(stock)
 
     return (<>
         <div className="stock">
