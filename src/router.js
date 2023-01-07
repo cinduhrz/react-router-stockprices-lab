@@ -18,7 +18,10 @@ const router = createBrowserRouter(
         // and App.js file needs to have the Outlet component to connect this router to it
         <Route path="/" element={<App/>}>
             <Route path="" element={<Main/>}/>
-            <Route path="stocks" element={<Stocks/>}/>
+            <Route 
+                path="stocks"
+                // loader={priceLoader}
+                element={<Stocks/>}/>
             <Route 
                 path="price/:symbol" 
                 loader={priceLoader} 
