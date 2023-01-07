@@ -10,9 +10,12 @@ const Price = (props) => {
     return (<>
         <div className="stock">
             <h1>
-                {stock.symbol}
+                {stock.symbol} / {stock.name}
             </h1>
-            <h2>{stock.price}</h2>
+            <h2>price: {stock.price}</h2>
+            <h3>change: {stock.change} ({stock.changesPercentage > 0 ? "+" : "-"}
+            {stock.changesPercentage})
+            </h3>
         </div>
     </>)
 }
