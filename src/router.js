@@ -10,6 +10,7 @@ import Stocks from "./pages/stocks"
 import Price from "./pages/price"
 import About from "./pages/about"
 import { priceLoader } from "./loaders"
+import { stocksLoader } from "./loaders"
 
 // create the router and save in a variable
 const router = createBrowserRouter(
@@ -20,7 +21,7 @@ const router = createBrowserRouter(
             <Route path="" element={<Main/>}/>
             <Route 
                 path="stocks"
-                // loader={priceLoader}
+                loader={stocksLoader}
                 element={<Stocks/>}/>
             <Route 
                 path="price/:symbol" 
